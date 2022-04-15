@@ -319,6 +319,7 @@
                     android:textColor="@color/status_bar"
                     android:textSize="18dp"
                     app:cornerRadius="15dp"
+                    android:backgroundTint="@color/white"
                     app:strokeColor="@color/status_bar"
                     app:strokeWidth="3dp" />
 
@@ -333,7 +334,7 @@
                     android:textColor="@color/status_bar"
                     android:textSize="18dp"
                     app:cornerRadius="15dp"
-                    android:backgroundTint=""
+                    android:backgroundTint="@color/white"
                     app:strokeColor="@color/status_bar"
                     app:strokeWidth="3dp" />
 
