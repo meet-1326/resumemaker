@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Name:"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edsurename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Surename:"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edfathername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Fathername:"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edmothername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Mothername:"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/eddate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:hint="Enter Birth Date:"
+                    android:background="@drawable/ed"
+                    android:textColor="@color/status_bar"
+                    android:textColorHint="@color/hint"
+                    android:inputType="date"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/datepick"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="Pick"
+                    android:textColor="@color/status_bar"
+                    android:textSize="18dp"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="@color/status_bar"
+                    app:strokeWidth="3dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:hint="Gender:"
+                    android:background="@drawable/ed"
+                    android:textColor="@color/status_bar"
+                    android:textColorHint="@color/hint"
+                    android:inputType="date"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/gender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male"
+                        android:layout_gravity="center"
+                        android:textColor="@color/status_bar"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        android:layout_gravity="center"
+                        android:textColor="@color/status_bar"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <DatePicker
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/edemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Email:"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:inputType="textEmailAddress"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edphon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Phon No.:"
+                android:inputType="number"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Address:"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edreligion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Religion:"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/ededuction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Eduction:"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/swiming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Swiming"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/status_bar"/>
+
+                <CheckBox
+                    android:id="@+id/danceing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Danceing"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/status_bar"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/hacking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hacking"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/status_bar"/>
+
+                <CheckBox
+                    android:id="@+id/other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Other"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/status_bar"/>
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edhobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:hint="Enter Hobby:"
+                android:background="@drawable/ed"
+                android:textColor="@color/status_bar"
+                android:textColorHint="@color/hint"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*EX: dance,swiming,cricket "
+                android:gravity="right"
+                android:layout_margin="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="#320707"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingRight="10dp">
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="Reset"
+                    android:textColor="@color/status_bar"
+                    android:textSize="18dp"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="@color/status_bar"
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/create"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="Create"
+                    android:textColor="@color/status_bar"
+                    android:textSize="18dp"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="@color/status_bar"
+                    app:strokeWidth="3dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
